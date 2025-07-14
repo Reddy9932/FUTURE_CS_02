@@ -1,1 +1,13 @@
+# Incident Response Report
+
+## Task: Security Alert Monitoring & Incident Response (FUTURE_CS_02)
+
+**Analyst:** Vijay Kumar Reddy Urimindi  
+**Tool Used:** Splunk Cloud Platform  
+**Instance URL:** https://prd-p-ijdr6.splunkcloud.com
+
+### Summary:
+Monitored and triaged internal logs using SPL. Identified error and login-related activities using queries like:
+```spl
+index=_internal error OR fail OR login
 
