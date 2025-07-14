@@ -11,3 +11,22 @@ Monitored and triaged internal logs using SPL. Identified error and login-relate
 ```spl
 index=_internal error OR fail OR login
 
+Findings:
+Repeated access to splunkd_ui_access.log
+
+INFO logs in splunk_web_service.log
+
+No high-risk anomalies but notable access patterns observed
+
+Classification:
+Alert	Description	Severity
+A1	Login failures from UI logs	High
+A2	Service logs showing INFO entries	Medium
+A3	Minor host activity fluctuations	Low
+
+Remediation:
+Enable brute-force alert triggers
+
+Admin alerting for failed logins
+
+Continuous log correlation with thresholds
